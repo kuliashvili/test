@@ -1,0 +1,10 @@
+{
+  "dependencies": {
+    "alk-rex-bold": "^1.0.0",
+    "archyedt-bold": "^1.0.0",
+    "arial-geo": "^1.0.0",
+    "arial-geo-bold": "^1.0.0",
+    "bpg-banner": "^1.0.2",
+    "bpg-glaho": "^1.0.0"
+  }
+}
