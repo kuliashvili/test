@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/path/to/bpg-boxo-boxo.min.css"> -->
+    <link rel="stylesheet" href="/node_modules/archyedt-bold/css/archyedt-bold.min.css">
+    <link rel="stylesheet" href="/node_modules/arial-geo-bold/css/arial-geo-bold.min.css">
+    <link rel="stylesheet" href="/node_modules/bpg-glaho/css/bpg-glaho.min.css">
+
+
+
+
+
+
+
+
+
+    <title>PIPRA</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="pictures/logo.png" alt="logo" class="logo-img">
+            </div>
+
+
+
+
+
+
+
+
+
+            <div class="nav">
+                <div class="nav-item nav-main" onclick="scrollToSection('main-content')">HOME</div>
+                <!-- <div class="nav-item nav-info" onclick="scrollToSection('info-content')">ჩვენს შესახებ</div> -->
+                <div class="nav-item nav-service" onclick="scrollToSection('service-parts')">STAGES</div>
+                <div class="nav-item nav-project" onclick="scrollToSection('service-content')">SERVICES</div>
+                <div class="nav-item nav-project" onclick="scrollToSection('project-content')">PROJECTS</div>
+                <div class="nav-item nav-contact" onclick="scrollToSection('contact-content')">CONTACT</div>
+            </div>
+
+            <div class="language-toggle">
+                <button class="language-btn btn1" data-lang="ge"></button>
+                <button class="language-btn btn2" data-lang="en"></button>
+            </div>
+
+            <script>
+                const languageButtons = document.querySelectorAll('.language-btn');
+
+                languageButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const selectedLanguage = button.getAttribute('data-lang');
+                        window.location.href = `index-${selectedLanguage}.html`;
+                    });
+                });
+            </script>
+
+
+            <div class="burger-menu">
+                <img class="burger-pic" src="pictures/burger.png" alt="burger">
+            </div>
+
+            <div class="mobile-menu">
+                <div class="close-menu">
+                    <img class="close-pic" src="pictures/burger-close.png" alt="close">
+                </div>
+                <div class="mobile-nav">
+                    <div class="mobile-nav-item" onclick="scrollToSection('main-content')">HOME</div>
+                    <div class="mobile-nav-item" onclick="scrollToSection('service-parts')">STAGES</div>
+                    <div class="mobile-nav-item" onclick="scrollToSection('service-content')">SERVICES</div>
+                    <div class="mobile-nav-item" onclick="scrollToSection('project-content')">PROJECTS</div>
+                    <div class="mobile-nav-item" onclick="scrollToSection('contact-content')">CONTACT</div>
+                </div>
+            </div>
+
+
+
+        </div>
+    </header>
+
+
+    <div class="home" id="main-content">
+        <div class="home-inner">
+            <div class="home-header">MEPPERS LLC</div>
+            <div class="home-text">We do all the work up to the green frame</div>
+        </div>
+    </div>
+
+
+    <div class="construction-types" id="service-parts">
+
+        <h1 class="construction-types-header">Stages of construction</h1>
+
+        <div class="construction-types-inner">
+
+            <div class="phase ph1">
+                <div class="phase-header">Site visit</div>
+                <div class="phase-text">Discussing the main aspects, understanding the client's wishes and conveying the documents</div>
+            </div>
+            <div class="phase ph2">
+                <div class="phase-header">Review of architecture</div>
+                <div class="phase-text">Specifying the preliminary budget, with the existing BOQ, reaching an agreement with the customer</div>
+            </div>
+            <div class="phase ph3">
+                <div class="phase-header">Negotiate terms</div>
+                <div class="phase-text">Specifying the budget, time schedule and other details, reaching an agreement with the customer</div>
+            </div>
+            <div class="phase ph4">
+                <div class="phase-header">Interpreting drawings</div>
+                <div class="phase-text">Receiving detailed drawings from the customer, analyzing and planning the works</div>
+            </div>
+            <div class="phase ph5">
+                <div class="phase-header">Start</div>
+                <div class="phase-text">On this stage, work begins, purchases and processes are managed</div>
+            </div>
+
+            <div class="phase ph6">
+                <div class="phase-header">Finish</div>
+                <div class="phase-text">Final project completion / submission</div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="services" id="service-content">
+        <h1 class="services-header">Our services</h1>
+        <div class="services-inner">
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic1.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">Consultation </div>
+                <div class="service-text"> Analysis of the construction project • Analysis and selection: facade systems, doors and windows, roofing, floors, walls • Search / purchase of construction materials
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic2.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">Preparatory Works</div>
+                <div class="service-text"> Field arrangement/arrangement • Geodesy/tracking • Fencing • Office arrangement • Assessment of safety standards
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic3.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">Frame construction</div>
+                <div class="service-text"> Excavation • Support systems preparation • Iron / concrete works • Roofing works • Arrangement of internal walls • Other additional works etc
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic4.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">Engineering Communications</div>
+                <div class="service-text"> Foundation and general insulation • Maintenance room • Water supply system • Sewerage / antiseptic system • Heating / cooling • Ventilation • Pool
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic5.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">Repair </div>
+                <div class="service-text"> Plastering of walls • Laying of floors • Plaster systems • Interior finishing: walls and floors • Railings • Painting works
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact-content">
+        <div class="contact-inner">
+            <div class="contact-info">
+                <div class="info-header">MEPPERS LLC</div>
+                <div class="info-text">We carry out all work up to the green caracas, as well as repairs</div>
+                <div class="info-contact">
+                    <div class="info-mobile">
+                        <div class="mobile-pic">
+                            <img src="pictures/mobile.png" alt="mobile-icon" class="mobile-pic-item">
+
+                        </div>
+                        <p class="mobile-text">+ (995) 591-12-34-56</p>
+                    </div>
+                    <div class="info-mail">
+                        <div class="mail-pic">
+                            <img src="pictures/mail.png" alt="mail-icon" class="mail-pic-item">
+
+                        </div>
+                        <p class="mail-text">Info.meppers@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-menu">
+                <div class="menu-header">Menu</div>
+                <div class="menu-link" onclick="scrollToSection('main-content')">Main</div>
+                <div class="menu-link" onclick="scrollToSection('service-parts')">Stages</div>
+                <div class="menu-link" onclick="scrollToSection('service-content')">Services</div>
+                <div class="menu-link">Projects</div>
+            </div>
+            <div class="contact-connect">
+                <div class="connect-header">Contact Us</div>
+
+                <div class="social">
+                    <div class="social-item">
+                        <img src="pictures/facebook.png" alt="facebook" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/twitter.png" alt="twitter" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/instargam.png" alt="instargam" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/whatsap.png" alt="whatsap" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/skype.png" alt="skype" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/linkedin.png" alt="linkedin" class="social-item">
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>

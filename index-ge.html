@@ -1,0 +1,247 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <!-- <link rel="stylesheet" href="/path/to/bpg-boxo-boxo.min.css"> -->
+    <link rel="stylesheet" href="/node_modules/archyedt-bold/css/archyedt-bold.min.css">
+    <link rel="stylesheet" href="/node_modules/arial-geo-bold/css/arial-geo-bold.min.css">
+    <link rel="stylesheet" href="/node_modules/bpg-glaho/css/bpg-glaho.min.css">
+
+
+
+
+
+
+
+
+
+    <title>PIPRA</title>
+</head>
+
+<body>
+
+    <header class="header">
+        <div class="header-inner">
+            <div class="logo">
+                <img src="pictures/logo.png" alt="logo" class="logo-img">
+            </div>
+
+
+
+
+
+
+
+
+            <div class="nav">
+                <div class="nav-item nav-main" onclick="scrollToSection('main-content')">მთავარი</div>
+                <!-- <div class="nav-item nav-info" onclick="scrollToSection('info-content')">ჩვენს შესახებ</div> -->
+                <div class="nav-item nav-service" onclick="scrollToSection('service-parts')">ეტაპები</div>
+                <div class="nav-item nav-project" onclick="scrollToSection('service-content')">სერვისები</div>
+                <div class="nav-item nav-project" onclick="scrollToSection('project-content')">პროექტები</div>
+                <div class="nav-item nav-contact" onclick="scrollToSection('contact-content')">კონტაქტი</div>
+            </div>
+
+
+            <div class="language-toggle">
+                <button class="language-btn btn1" data-lang="ge"></button>
+                <button class="language-btn btn2" data-lang="en"></button>
+            </div>
+
+            <script>
+                const languageButtons = document.querySelectorAll('.language-btn');
+
+                languageButtons.forEach(button => {
+                    button.addEventListener('click', () => {
+                        const selectedLanguage = button.getAttribute('data-lang');
+                        window.location.href = `index-${selectedLanguage}.html`;
+                    });
+                });
+            </script>
+
+
+
+            <div class="burger-menu">
+                <img class="burger-pic" src="pictures/burger.png" alt="burger">
+            </div>
+
+            <div class="mobile-menu">
+                <div class="close-menu">
+                    <img class="close-pic" src="pictures/burger-close.png" alt="close">
+                </div>
+
+
+                <div class="mobile-nav">
+                    <div class="mobile-nav-item" onclick="scrollToSection('main-content')">მთავარი</div>
+                    <div class="mobile-nav-item" onclick="scrollToSection('service-parts')">ეტაპები</div>
+                    <div class="mobile-nav-item" onclick="scrollToSection('service-content')">სერვისები</div>
+                    <div class="mobile-nav-item" onclick="scrollToSection('project-content')">პროექტები</div>
+                    <div class="mobile-nav-item" onclick="scrollToSection('contact-content')">კონტაქტი</div>
+                </div>
+            </div>
+
+
+        </div>
+    </header>
+
+
+    <div class="home" id="main-content">
+        <div class="home-inner">
+            <div class="home-header">MEPPERS LLC</div>
+            <div class="home-text">ვასრულებთ ყველა სამუშაოს მწვანე კარკასამდე</div>
+        </div>
+    </div>
+
+
+    <div class="construction-types" id="service-parts">
+
+        <h1 class="construction-types-header">მშენებლობის ეტაპები</h1>
+
+        <div class="construction-types-inner">
+
+            <div class="phase ph1">
+                <div class="phase-header">ვიზიტი ობიექტზე</div>
+                <div class="phase-text">ძირითადი ასპექტების განხილვა, კლიენტის სურვილის გაგება და დოკუმენტების გადმოცემა</div>
+            </div>
+            <div class="phase ph2">
+                <div class="phase-header">არქიტექტურის განხილვა</div>
+                <div class="phase-text">წინასწარი ბიუჯეტის დასახელება, არსებული BOQ-თი, შეთანხმების მიღწევა დამკვეთთან</div>
+            </div>
+            <div class="phase ph3">
+                <div class="phase-header">მოლაპარაკება პირობებზე</div>
+                <div class="phase-text">ბიუჯეტის, დროის გრაფიკის და სხვა დეტალების დაზუსტება, შეთანხმების მიღწევა დამკვეთთან</div>
+            </div>
+            <div class="phase ph4">
+                <div class="phase-header">ნახაზების გარჩევა</div>
+                <div class="phase-text">დამკვეთისგან დეტალური ნახაზების მიღება, გარჩევა და სამუშაოების დაგეგმვა </div>
+            </div>
+            <div class="phase ph5">
+                <div class="phase-header">დაწყება</div>
+                <div class="phase-text">ამ ეტპაზე სამუშაოები იწყება, ხდება შესყიდვები და პროცესების მართვა</div>
+            </div>
+
+            <div class="phase ph6">
+                <div class="phase-header">დასრულება</div>
+                <div class="phase-text">საბოლოო პროექტის დასრულება / ჩაბარება</div>
+            </div>
+
+
+        </div>
+    </div>
+
+
+    <div class="services" id="service-content">
+        <h1 class="services-header">ჩვენი სერვისები</h1>
+        <div class="services-inner">
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic1.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">კონსულტაცია </div>
+                <div class="service-text"> სამშენებლო პროექტის ანალიზი • ანალიზი და შერჩევა: ფასადის სისტემები, კარ-ფანჯრები, გადახურვა, იატაკები, კედლები • სამშენებლო მასალების მოძიება / შესყიდვა
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic2.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">მოსამზადებელი სამუშაოები </div>
+                <div class="service-text"> სამშ. მოედნის მოწესრიგება / მოწყობა • გეოდეზია / დაკვალვა • შემოღობვა • ოფისის მოწყობა • უსაფრთხოების ნორმების შეფასება
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic3.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">კარკასის მშენებლობა </div>
+                <div class="service-text"> ექსკავაცია • დამხმარე სისტემები მომზადება • რკინა / ბეტონის სამუშაოები • გადახურვის სამუშაოები • შიდა კედელების მოწყობა • სხვა დამატებითი სამუშაოები და ა. შ.
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic4.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">საინჟინრო კომუნიკაციები </div>
+                <div class="service-text"> საძირკვლის და ზოგადი იზოლაცია • ტექნიკური ოთახი • წყლის მიწოდების სისტემა • კანილიზაცია / ანტისპეტიკური სისტემა • გათბობა / გაგრილება • ვენტილაცია • აუზი
+                </div>
+            </div>
+            <div class="service">
+                <div class="service-pic">
+                    <img src="pictures/service-pic5.png" alt="" class="service-pic-item">
+                </div>
+                <div class="service-header">რემონტი </div>
+                <div class="service-text"> კედლების ლესვა • იატაკის დასხმა • თაბაშირმუყაოს სისტემები • შიდა მოპირკეთება: კედლები და იატაკები • მოაჯირები • შეღებვითი სამუშაოები
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="contact" id="contact-content">
+        <div class="contact-inner">
+            <div class="contact-info">
+                <div class="info-header">MEPPERS LLC</div>
+                <div class="info-text">ჩვენ ვასრულებთ ყველა სამუშაოს მწვანე კარაკასამდე, ასევე რემონტსაც</div>
+                <div class="info-contact">
+                    <div class="info-mobile">
+                        <div class="mobile-pic">
+                            <img src="pictures/mobile.png" alt="mobile-icon" class="mobile-pic-item">
+
+                        </div>
+                        <p class="mobile-text">+ (995) 591-12-34-56</p>
+                    </div>
+                    <div class="info-mail">
+                        <div class="mail-pic">
+                            <img src="pictures/mail.png" alt="mail-icon" class="mail-pic-item">
+
+                        </div>
+                        <p class="mail-text">Info.meppers@gmail.com</p>
+                    </div>
+                </div>
+            </div>
+            <div class="contact-menu">
+                <div class="menu-header">მენიუ</div>
+                <div class="menu-link" onclick="scrollToSection('main-content')">მთავარი</div>
+                <div class="menu-link" onclick="scrollToSection('service-parts')">ეტაპები</div>
+                <div class="menu-link" onclick="scrollToSection('service-content')">სერვისები</div>
+                <div class="menu-link">პროექტები</div>
+            </div>
+            <div class="contact-connect">
+                <div class="connect-header">დაგვიკავშირდი</div>
+
+                <div class="social">
+                    <div class="social-item">
+                        <img src="pictures/facebook.png" alt="facebook" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/twitter.png" alt="twitter" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/instargam.png" alt="instargam" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/whatsap.png" alt="whatsap" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/skype.png" alt="skype" class="social-item">
+                    </div>
+                    <div class="social-item">
+                        <img src="pictures/linkedin.png" alt="linkedin" class="social-item">
+                    </div>
+
+
+
+
+
+                </div>
+
+            </div>
+        </div>
+    </div>
+
+    <script src="main.js"></script>
+</body>
+
+</html>
