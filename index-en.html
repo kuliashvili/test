@@ -47,8 +47,8 @@
             </div>
 
             <div class="language-toggle">
-                <button class="language-btn btn1" data-lang="ge"></button>
-                <button class="language-btn btn2" data-lang="en"></button>
+                <button class="language-btn btn1" data-lang=""></button>
+                <button class="language-btn btn2" data-lang="-en"></button>
             </div>
 
             <script>
@@ -57,7 +57,7 @@
                 languageButtons.forEach(button => {
                     button.addEventListener('click', () => {
                         const selectedLanguage = button.getAttribute('data-lang');
-                        window.location.href = `index-${selectedLanguage}.html`;
+                        window.location.href = `index${selectedLanguage}.html`;
                     });
                 });
             </script>
